@@ -9,8 +9,8 @@ import java.util.List;
  *
  */
 public class Ex01p3Lambda {
-	interface Predicate{
-		public boolean test(int i); 
+	interface IntValidator{
+		public boolean validate(int i); 
 	}
 	
 	public static void main(String[] args) {
@@ -29,10 +29,10 @@ public class Ex01p3Lambda {
 		
 	}
 	
-	public static List<Integer> filterInt(List<Integer> input, Predicate filter){
+	public static List<Integer> filterInt(List<Integer> input, IntValidator filter){
 		List<Integer> l = new ArrayList<Integer>();
 		for(Integer i : input){
-			if(filter.test(i)){
+			if(filter.validate(i)){
 				l.add(i);
 			}
 		}

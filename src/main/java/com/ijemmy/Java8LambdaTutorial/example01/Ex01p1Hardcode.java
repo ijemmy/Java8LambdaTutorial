@@ -1,4 +1,4 @@
-package com.ijemmy.Java8LambdaTutorial;
+package com.ijemmy.Java8LambdaTutorial.example01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.List;
  * Hello world!
  *
  */
-public class Example01 {
+public class Ex01p1Hardcode {
 	public static void main(String[] args) {
 		List<Integer> l = Arrays.asList(1, 3, 2, 4);
 		System.out.println(filterInt(l));

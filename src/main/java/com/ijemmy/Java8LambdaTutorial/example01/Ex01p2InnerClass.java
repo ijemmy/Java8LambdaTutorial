@@ -1,4 +1,4 @@
-package com.ijemmy.Java8LambdaTutorial;
+package com.ijemmy.Java8LambdaTutorial.example01;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,25 +8,19 @@ import java.util.List;
  * Hello world!
  *
  */
-public class Example02 {
+public class Ex01p2InnerClass {
+	@FunctionalInterface
 	interface Predicate{
 		public boolean test(int i); 
 	}
 	
 	public static void main(String[] args) {
 		List<Integer> l = Arrays.asList(1, 3, 2, 4);
-		System.out.println(filterInt(l, i ->  i >= 3 ));
-		
-		/*
-		 * There are Many ways to write lambda
-		 * 1. (i) 	  -> i >= 3
-		 * 2. (int i) -> return i >= 3
-		 * 3. i -> {
-		 * 		//do many things
-		 * 		return i >= 3;
-		 * 	  }
-		 */
-		
+		System.out.println(filterInt(l, new Predicate(){
+			public boolean test(int i){
+				return i >= 3;
+			}
+		}));
 	}
 	
 	public static List<Integer> filterInt(List<Integer> input, Predicate filter){

@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Hello world!
- *
- */
 public class Ex01p1Hardcode {
 	public static void main(String[] args) {
 		List<Integer> l = Arrays.asList(1, 3, 2, 4);

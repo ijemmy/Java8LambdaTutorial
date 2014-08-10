@@ -14,7 +14,7 @@ public class Ex2Sorting {
 		people.add(new Person("Barret Wallace", 35));
 		people.add(new Person("Aeris Gansborough", 22));
 		people.sort(Comparator.comparing(Person::getName));
-		System.out.println(people);
+		people.forEach(System.out::println);
 	}
 
 }

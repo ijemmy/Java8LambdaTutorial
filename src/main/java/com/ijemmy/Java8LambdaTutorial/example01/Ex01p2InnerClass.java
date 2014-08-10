@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Hello world!
- *
- */
 public class Ex01p2InnerClass {
 	@FunctionalInterface
 	interface IntValidator{
